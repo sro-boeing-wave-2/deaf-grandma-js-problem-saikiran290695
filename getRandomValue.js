@@ -9,7 +9,8 @@
  * @returns {number}
  */
 const getRandomValue = (min, max) => {
-  return Math.floor(Math.random()*(max - min) + min);
+  const random = Math.floor(Math.random() * (max - min) + min);
+  return random;
 };
 
 module.exports = getRandomValue;

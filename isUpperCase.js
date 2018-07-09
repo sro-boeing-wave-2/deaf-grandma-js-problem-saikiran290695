@@ -8,14 +8,12 @@
  * @returns {boolean}
  */
 const isUppercase = (s) => {
-  var uTemp = s.toUpperCase();
-  if(uTemp == s)
-  {
-      return true;
+  const uTemp = s.toUpperCase();
+  let res = false;
+  if (uTemp === s) {
+    res = true;
   }
-  else{
-      return false;
-  }
+  return res;
 };
 
 module.exports = isUppercase;
