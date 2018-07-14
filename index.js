@@ -21,12 +21,12 @@ while (count < 3) {
   const res = isUppercase(input);
   const rand = getRandomValue(1930, 1950);
   if (res) { // check if convo is in CAP
-    if (input === 'BYE') {
-      count += 1;
-    } else {
-      count = 0;
-    }
     response = `NO, NOT SINCE ${rand}`;
+  }
+  if (input === 'BYE') {
+    count += 1;
+  } else {
+    count = 0;
   }
   if (count === 3) { // check if count of 'BYE' reached 3
     break;
